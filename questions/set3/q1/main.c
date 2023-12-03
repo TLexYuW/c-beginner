@@ -8,7 +8,9 @@ int main(int argc, char const *argv[])
     // Using %x to print an integer in hexadecimal format
     printf("%x\n", var);
 
-    printf("%X", var);
+    printf("%X\n", var);
+
+    printf("%d", var);
 
     return 0;
 }
