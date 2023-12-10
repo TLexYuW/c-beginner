@@ -11,6 +11,7 @@ int main()
     // %.1 = decimal precision
     // %1 = minimum field widtth
     // %- = left align
+    // %p = memory address
 
     float item1 = 5.75;
     float item2 = 10.00;
