@@ -1,5 +1,8 @@
+#include <stdio.h>
+
 int add(int x, int y)
 {
+    printf("add function invoke!\n");
     return x + y;
 }
 
