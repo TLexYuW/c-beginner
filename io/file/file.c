@@ -19,7 +19,7 @@ int main()
     //     printf("That file was NOT deleted!");
     // }
 
-    FILE *pF = fopen("poem.txt", "r");
+    FILE *pF = fopen("../../poem.txt", "r");
     // Buffer
     char buffer[255];
 
