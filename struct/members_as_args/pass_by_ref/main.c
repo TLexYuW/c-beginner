@@ -8,16 +8,30 @@ struct charset
 
 void keyValue(char *s, int *i)
 {
-    scanf("%c %d", s, i);
+    *s = 'c';
+    *i = 100;
+    printf("%c, %d\n", *s, *i);
 }
 
-int main(int argc, char const *argv[])
+void setNum(int *num2)
 {
-    int j;
+    printf("before setting, num2: %d\n", *num2);
+    *num2 = 5;
+    printf("after setting, num2: %d\n", *num2);
+}
+
+int main(void)
+{
     struct charset cs;
     keyValue(&cs.s, &cs.i);
     printf("%c %d\n", cs.s, cs.i);
     printf("%p %p", cs.s, cs.i);
+
+    // int num1 = 2;
+    // printf("before setNum(), num1: %d\n", num1);
+
+    // setNum(&num1);
+    // printf("after setNum(), num1: %d\n", num1);
 
     return 0;
 }

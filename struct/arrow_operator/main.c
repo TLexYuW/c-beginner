@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct mian
+typedef struct main
 {
     int x;
     int y;
